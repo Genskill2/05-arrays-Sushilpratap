@@ -2,7 +2,14 @@
 #include <assert.h>
 
 
-int max(int [], int);
+int max(int x[], int)
+{ int max=x[0];
+  for(i=1; i<7; i++)
+  {if (max<x[i])
+    max=x[i];
+   i++;}
+ return max;
+}
 
 int main(void) {
   int x[] = {9,5,6,10,2,-3,4};
